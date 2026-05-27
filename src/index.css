@@ -11,6 +11,8 @@
   --cyan: #4ed8f5;
   --cyan-soft: #8ae8fb;
   --coral: #ff7b6b;
+  --twitch: #9146ff;
+  --twitch-soft: #a970ff;
   --white: #ffffff;
   --text: #eef1f8;
   --text-muted: #9aa3b8;
@@ -200,6 +202,17 @@ main {
 .btn--ghost:hover {
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.28);
+}
+
+.btn--twitch {
+  background: rgba(145, 70, 255, 0.1);
+  border-color: rgba(145, 70, 255, 0.45);
+  color: var(--text);
+}
+
+.btn--twitch:hover {
+  background: rgba(145, 70, 255, 0.18);
+  border-color: var(--twitch-soft);
 }
 
 /* ─── Header ─── */
@@ -466,9 +479,21 @@ main {
 
 .hero__actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 0.75rem;
+  max-width: 100%;
   margin-top: 2rem;
+  overflow-x: auto;
+  padding-bottom: 0.15rem;
+  scrollbar-width: thin;
+}
+
+.hero__actions .btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: 0.85rem 1.2rem;
+  font-size: 0.88rem;
 }
 
 /* Hero bento cards */
@@ -1224,15 +1249,6 @@ main {
 }
 
 @media (max-width: 640px) {
-  .hero__actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .hero__actions .btn {
-    width: 100%;
-  }
-
   .site-footer__brand {
     flex-direction: column;
   }

@@ -39,7 +39,7 @@ export function Hero() {
             <a className="btn btn--secondary" href="#podcast">
               Listen to the Podcast
             </a>
-            <a className="btn btn--ghost" href="#joy-stick">
+            <a className="btn btn--twitch" href="#joy-stick">
               Join the Stream
             </a>
           </div>
