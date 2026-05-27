@@ -80,7 +80,7 @@ export const contentPillars = [
   },
   {
     id: 'joy-stick',
-    title: 'The Joy Stick',
+    title: 'The Joystick',
     subtitle: 'Twitch / Gaming',
     logo: images.theJoystick.logo,
     logoAlt: 'Two Brothers Presents: The Joystick',
@@ -111,10 +111,10 @@ export const heroCards = [
     accent: 'podcast' as const,
   },
   {
-    label: 'The Joy Stick',
+    label: 'The Joystick',
     sublabel: 'Live on Twitch',
     logo: images.theJoystick.logo,
-    alt: 'The Joy Stick',
+    alt: 'The Joystick',
     href: '#joy-stick',
     accent: 'joystick' as const,
   },

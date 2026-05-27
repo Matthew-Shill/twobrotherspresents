@@ -2,7 +2,7 @@
 
 Marketing site for [Two Brothers Presents](https://github.com/Matthew-Shill/twobrotherspresents) — Matt and Mike Shill's creator brand focused on men's mental health through adventure, gaming, brotherhood, and honest conversation.
 
-**Flagship content:** Way Less Sad (The Show & Podcast) and The Joy Stick (Twitch/gaming).
+**Flagship content:** Way Less Sad (The Show & Podcast) and The Joystick (Twitch/gaming).
 
 ## Development
 
