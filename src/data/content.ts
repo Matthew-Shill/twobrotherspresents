@@ -1,14 +1,14 @@
 export const images = {
   brand: {
-    icon: '/images/brand/icon.png',
+    icon: '/images/brand/icon.svg',
   },
   wayLessSad: {
-    show: '/images/way-less-sad/the-show.png',
-    podcast: '/images/way-less-sad/the-podcast.png',
-    stacked: '/images/way-less-sad/stacked.png',
+    show: '/images/way-less-sad/the-show.svg',
+    podcast: '/images/way-less-sad/the-podcast.svg',
+    stacked: '/images/brand/way-less-sad.svg',
   },
   theJoystick: {
-    logo: '/images/the-joystick/logo.png',
+    logo: '/images/the-joystick/the-joystick.svg',
   },
 } as const
 

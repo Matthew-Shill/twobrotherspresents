@@ -245,7 +245,8 @@ main {
   flex-shrink: 0;
 }
 
-.brand-mark__icon.floating-logo img {
+.brand-mark__icon img {
+  display: block;
   width: 2.35rem;
   height: 2.35rem;
   object-fit: contain;
@@ -441,12 +442,15 @@ main {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 6.5vw, 4.5rem);
   font-weight: 600;
-  line-height: 1.04;
+  line-height: 1.18;
   letter-spacing: -0.035em;
 }
 
 .hero__title em {
   font-style: italic;
+  padding-block: 0.06em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
   background: linear-gradient(120deg, var(--yellow-soft), var(--cyan-soft));
   -webkit-background-clip: text;
   background-clip: text;
@@ -598,8 +602,14 @@ main {
 .tag-strip__track {
   display: flex;
   width: max-content;
+  animation: tag-scroll 70s linear infinite;
+}
+
+.tag-strip__group {
+  display: flex;
+  flex-shrink: 0;
   gap: 0.75rem;
-  animation: tag-scroll 40s linear infinite;
+  padding-right: 0.75rem;
 }
 
 .tag-strip__item {

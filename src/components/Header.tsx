@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { images, navLinks } from '../data/content'
-import { FloatingLogo } from './FloatingLogo'
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -17,12 +16,9 @@ export function Header() {
     <header className={`site-header${scrolled ? ' site-header--scrolled' : ''}`}>
       <div className="site-header__inner">
         <a className="brand-mark" href="#home" aria-label="Two Brothers Presents home">
-          <FloatingLogo
-            src={images.brand.icon}
-            alt=""
-            variant="transparent"
-            className="brand-mark__icon"
-          />
+          <span className="brand-mark__icon" aria-hidden="true">
+            <img src={images.brand.icon} alt="" draggable={false} />
+          </span>
           <span className="brand-mark__text">
             <span className="brand-mark__line">Two Brothers</span>
             <span className="brand-mark__line brand-mark__line--accent">Presents</span>
